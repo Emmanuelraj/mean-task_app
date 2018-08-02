@@ -1,0 +1,10 @@
+<p>
+  task-list works!
+</p>
+
+<ul class="nav nav-pills nav-stacked">
+   <ul *ngFor="let task of tasks"  (click)="onSelectTask(task)">
+      <li>  <a> {{task.items}}  </a></li>
+
+    </ul>
+</ul>

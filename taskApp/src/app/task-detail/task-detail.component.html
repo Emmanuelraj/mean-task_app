@@ -1,0 +1,33 @@
+<p>
+  task-detail works!
+</p>
+
+
+
+<div class="container-fluid">
+  <h1>Edit Task Items</h1>
+     <form  class="well">
+           <div class="form-group">
+
+             <label>Enter your items :</label>
+
+             <input type="text" class="form-control" name="items" placeholder="Enter your items" [(ngModel)]="task.items"/>
+
+           </div>
+
+           <div class="alert alert-warning" *ngIf="editMsgBtn">
+            <strong>Edit!</strong>Edited SuccessFully!
+          </div>
+
+          <div class="alert alert-danger" *ngIf="deleteMsgBtn">
+            <strong>Deleted!</strong> deleted record SuccessFullys
+                    </div>
+
+
+           <button type="button" class="btn btn-default"  (click)="updateTask()">Edit</button>
+
+           <button type="button" class="btn btn-danger" (click)="deleteTask()">Delete</button>
+
+     </form>
+
+</div>
