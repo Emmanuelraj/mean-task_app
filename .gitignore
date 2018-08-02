@@ -6,3 +6,5 @@ taskApp/config/keys.js
 /taskApp/node_modules
 
 /taskApp/package-lock.json
+
+taskApp/package-lock.json
